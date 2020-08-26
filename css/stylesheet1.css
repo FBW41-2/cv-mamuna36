@@ -1,0 +1,94 @@
+body{
+    font-size: 20px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px;
+    font-family: sans-serif;
+    margin: 0;
+}
+section {
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 0 0;
+    margin-top: 5px;
+}
+.profile-photo {
+    height: 250px;
+    width:  250px;
+    display: block;
+    margin: 20px auto 10px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+ header .profile-photo img {
+     width: 100%;
+ }
+ h1 {
+     text-decoration: none;
+ } 
+h1, h2{
+    text-align: center;
+    margin-bottom: 0px;
+}
+#subtitle {
+    color: gray;
+    margin-top: 0px;
+}
+h2{
+    color: #6C6C6C;
+}
+#menu {
+        padding:0;
+        display: block;
+}
+#menu a{
+    color: white;
+    text-decoration: none;
+}
+#menu li {
+    padding-left: 50px;
+    background-color:#B9B9B9;
+    margin: 1px auto;
+    list-style-type:none;
+    color: white;
+    
+    }
+h1, h2, h3{
+        margin-left: 10px;
+        margin-top: 1px;
+    }
+a .project1 {
+    display: block;
+    width:  250px;
+    margin: 20px auto;
+    border: black solid 1px;
+    overflow: hidden;
+}
+a .project1 img {
+    width: 100%;
+}
+figurecaption a {
+    text-align: center;
+}
+.skills .progress{
+    background-color: #29C9D4;
+    height: 10px;
+    border-radius: 5px;
+    width: 50%;
+}
+
+.skills .progress-bar{
+    border-color: gray;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 6px;
+    width: 75%;
+    margin: auto;
+}
+ul li{
+    list-style-type: none;
+}
+#contact a{
+    text-decoration: none;
+    color: #6C6C6C;
+}
