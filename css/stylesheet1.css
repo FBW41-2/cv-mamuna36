@@ -6,12 +6,7 @@ body{
     font-family: sans-serif;
     margin: 0;
 }
-section {
-    border-color: gray;
-    border-style: solid;
-    border-width: 1px 0 0;
-    margin-top: 5px;
-}
+
 .profile-photo {
     height: 250px;
     width:  250px;
@@ -25,25 +20,38 @@ section {
  }
  h1 {
      text-decoration: none;
+     text-align: center;
+     margin-bottom: 0px;
+ }
+ #menu a {
+     display: block;
  } 
-h1, h2{
-    text-align: center;
-    margin-bottom: 0px;
-}
 #subtitle {
     color: gray;
     margin-top: 0px;
+    margin-bottom: 20px;
 }
 h2{
     color: #6C6C6C;
+    text-align: center;
 }
 #menu {
         padding:0;
         display: block;
+        margin: 0 5px;
+        
 }
 #menu a{
     color: white;
     text-decoration: none;
+    position: relative;
+
+}
+#menu a:after { 
+    content: ">";
+    position: absolute;
+    right: 10px;
+    
 }
 #menu li {
     padding-left: 50px;
@@ -53,22 +61,51 @@ h2{
     color: white;
     
     }
-h1, h2, h3{
+h1    {
         margin-left: 10px;
-        margin-top: 1px;
+        margin-top: 20px;
+        margin-bottom: 0;
     }
-a .project1 {
+h1, h2{
+        margin-left: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+h3 {
+    margin: 10px;
+}
+#cv ul li em {
+    color: lightgray;
+    display: block;
+}    
+#cv ul li .job {
+        display: block;
+    }
+#portfolio a .project1 {
     display: block;
     width:  250px;
     margin: 20px auto;
     border: black solid 1px;
     overflow: hidden;
 }
-a .project1 img {
+#portfolio a .project1 img {
     width: 100%;
+}
+#portfolio a .link-text{
+    display: block;
+    margin: 5px auto;
+    color: gray;
+    text-align: center;
+    text-decoration: none;
+}
+a .project1 span em {
+    color: lightgray;
 }
 figurecaption a {
     text-align: center;
+}
+.skills {
+    margin: auto 20px;
 }
 .skills .progress{
     background-color: #29C9D4;
@@ -82,7 +119,6 @@ figurecaption a {
     border-width: 1px;
     border-style: solid;
     border-radius: 6px;
-    width: 75%;
     margin: auto;
 }
 ul li{
@@ -91,4 +127,10 @@ ul li{
 #contact a{
     text-decoration: none;
     color: #6C6C6C;
+}
+ul li i{
+    background-color: white;
+    color: #29C9D4;
+    margin: 5px auto;
+    font-size: 24px;
 }
