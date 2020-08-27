@@ -45,6 +45,7 @@ h2{
     color: white;
     text-decoration: none;
     position: relative;
+    padding: 5px 0 5px 6px;
 
 }
 #menu a:after { 
@@ -61,15 +62,8 @@ h2{
     color: white;
     
     }
-h1    {
-        margin-left: 10px;
-        margin-top: 20px;
-        margin-bottom: 0;
-    }
-h1, h2{
-        margin-left: 10px;
-        margin-top: 20px;
-        margin-bottom: 20px;
+h1, h2    {
+        margin: 20px auto 5px;
     }
 h3 {
     margin: 10px;
@@ -81,6 +75,14 @@ h3 {
 #cv ul li .job {
         display: block;
     }
+#cv .download {
+    text-align: center;
+    
+}
+#cv .download a {
+    text-decoration: none;
+    color:#29C9D4;
+}
 #portfolio a .project1 {
     display: block;
     width:  250px;
@@ -91,14 +93,18 @@ h3 {
 #portfolio a .project1 img {
     width: 100%;
 }
+#portfolio a {
+    text-decoration: none;
+}
 #portfolio a .link-text{
+    color: darkgray;
     display: block;
     margin: 5px auto;
-    color: gray;
+    font-size: 20px;
     text-align: center;
     text-decoration: none;
 }
-a .project1 span em {
+#portfolio a em {
     color: lightgray;
 }
 figurecaption a {
@@ -121,17 +127,20 @@ figurecaption a {
     border-radius: 6px;
     margin: auto;
 }
-ul li{
+#contact ul li{
     list-style-type: none;
+    margin: 5px auto;
 }
+
 #contact a{
     text-decoration: none;
     color: #6C6C6C;
+    font-size: 20px;
+    vertical-align:middle;
 }
 ul li i{
     background-color: white;
     color: #29C9D4;
-    margin: 5px auto;
     font-size: 24px;
-    text-align: center;
+    vertical-align:middle;
 }
