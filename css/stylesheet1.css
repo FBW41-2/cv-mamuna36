@@ -1,9 +1,6 @@
 body{
-    border-color: gray;
-    border-style: solid;
-    border-width: 0.05rem;
+    border: gray solid 1px;
     font-family: 'Nova Mono', monospace;
-    margin: 0;
 }
 
 .profile-photo {
@@ -22,14 +19,10 @@ body{
      text-align: center;
      margin-bottom: 0;
      font-family: 'IM Fell English SC', serif;
- }
- #menu a {
-     display: block;
  } 
 #subtitle {
     color: gray;
-    margin-top: 0;
-    margin-bottom: 1rem;
+    margin: 0 auto 1rem;
     font-family: 'Tangerine', cursive;
     font-size: 1.5rem;
 }
@@ -44,36 +37,39 @@ h2{
     font-size: 1.5em;
 }
 #menu {
-        padding:0;
         display: block;
-        margin: 0 0.4rem;
+        padding: 0;
+        margin: 0;
+
         
-}
-#menu a{
+} 
+#menu a {
+    display: block;
     color: #fff;
     font-size: 1em;
     text-decoration: none;
     position: relative;
-    padding: 0.4em  0 0.4em 0.5em;
-
-}
-#menu a:after { 
-    content: ">";
-    position: absolute;
-    right: 0.4em;
-    
+    padding: 0.4rem  0 0.4rem 0.5rem;
+    margin: 0;
 }
 #menu li {
     padding-left: 2.5rem;
     background-color:#B9B9B9;
-    margin: .05rem auto;
+    margin: 0.05rem auto 0;
     list-style-type:none;
     color: #fff;
     
     }
-h1, h2    {
+#menu a:after { 
+    content: ">";
+    position: absolute;
+    right: 0.4em;    
+}
+
+h1, h2 {
         margin: 1rem auto 0.5rem;
     }
+
 h3 {
     margin: 0.5rem;
 }
@@ -92,6 +88,9 @@ h3 {
     text-decoration: none;
     color:#29C9D4;
 }
+#portfolio a {
+    text-decoration: none;
+}
 #portfolio a .project1 {
     display: block;
     width:  12.5rem;
@@ -101,9 +100,6 @@ h3 {
 }
 #portfolio a .project1 img {
     width: 100%;
-}
-#portfolio a {
-    text-decoration: none;
 }
 #portfolio a .link-text{
     color: #a9a9a9;
@@ -116,25 +112,19 @@ h3 {
 #portfolio a em {
     color: lightgray;
 }
-figurecaption a {
-    text-align: center;
-}
+
 .skills {
-    margin: auto 1rem;
+    margin: 0 1rem;
+} 
+.skills .progress-bar{
+    border: gray 0.05rem solid;
+    border-radius: 0.5rem;
+    height: 0.5rem;
 }
 .skills .progress{
     background-color: #29C9D4;
-    height: 0.5rem;
-    border-radius: 0.25rem;
-    width: 50%;
-}
-
-.skills .progress-bar{
-    border-color: gray;
-    border-width: 0.05rem;
-    border-style: solid;
+    height: 100%;
     border-radius: 0.5rem;
-    margin: auto;
 }
 
 #contact ul li{
