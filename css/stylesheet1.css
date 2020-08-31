@@ -1,17 +1,16 @@
 body{
-    font-size: 20px;
     border-color: gray;
     border-style: solid;
-    border-width: 1px;
-    font-family: sans-serif;
+    border-width: 0.05rem;
+    font-family: 'Nova Mono', monospace;
     margin: 0;
 }
 
 .profile-photo {
-    height: 250px;
-    width:  250px;
+    height: 12.5rem;
+    width:  12.5rem;
     display: block;
-    margin: 20px auto 10px;
+    margin: 1rem auto 0.5rem;
     border-radius: 50%;
     overflow: hidden;
 }
@@ -22,6 +21,7 @@ body{
      text-decoration: none;
      text-align: center;
      margin-bottom: 0;
+     font-family: 'IM Fell English SC', serif;
  }
  #menu a {
      display: block;
@@ -29,44 +29,53 @@ body{
 #subtitle {
     color: gray;
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
+    font-family: 'Tangerine', cursive;
+    font-size: 1.5rem;
+}
+@font-face {
+    font-family: magic;
+    src: url("../fonts/Magic Hat.ttf");
 }
 h2{
     color: #6C6C6C;
+    font-family: magic, Arial, sans-serif;
     text-align: center;
+    font-size: 1.5em;
 }
 #menu {
         padding:0;
         display: block;
-        margin: 0 5px;
+        margin: 0 0.4rem;
         
 }
 #menu a{
     color: #fff;
+    font-size: 1em;
     text-decoration: none;
     position: relative;
-    padding: 5px 0 5px 6px;
+    padding: 0.4em  0 0.4em 0.5em;
 
 }
 #menu a:after { 
     content: ">";
     position: absolute;
-    right: 10px;
+    right: 0.4em;
     
 }
 #menu li {
-    padding-left: 50px;
+    padding-left: 2.5rem;
     background-color:#B9B9B9;
-    margin: 1px auto;
+    margin: .05rem auto;
     list-style-type:none;
     color: #fff;
     
     }
 h1, h2    {
-        margin: 20px auto 5p
+        margin: 1rem auto 0.5rem;
     }
 h3 {
-    margin: 10px;
+    margin: 0.5rem;
 }
 #cv ul li em {
     color: lightgray;
@@ -85,9 +94,9 @@ h3 {
 }
 #portfolio a .project1 {
     display: block;
-    width:  250px;
-    margin: 20px auto;
-    border: #000 solid 1px;
+    width:  12.5rem;
+    margin: 1rem auto;
+    border: #000 solid 0.05rem;
     overflow: hidden;
 }
 #portfolio a .project1 img {
@@ -99,8 +108,8 @@ h3 {
 #portfolio a .link-text{
     color: #a9a9a9;
     display: block;
-    margin: 5px auto;
-    font-size: 20px;
+    margin: 0.4rem auto;
+    font-size: 1.2em;
     text-align: center;
     text-decoration: none;
 }
@@ -111,36 +120,38 @@ figurecaption a {
     text-align: center;
 }
 .skills {
-    margin: auto 20px;
+    margin: auto 1rem;
 }
 .skills .progress{
     background-color: #29C9D4;
-    height: 10px;
-    border-radius: 5px;
+    height: 0.5rem;
+    border-radius: 0.25rem;
     width: 50%;
 }
 
 .skills .progress-bar{
     border-color: gray;
-    border-width: 1px;
+    border-width: 0.05rem;
     border-style: solid;
-    border-radius: 6px;
+    border-radius: 0.5rem;
     margin: auto;
 }
+
 #contact ul li{
     list-style-type: none;
-    margin: 5px auto;
+    margin: 0.6rem 1rem;
 }
 
 #contact a{
     text-decoration: none;
     color: #6C6C6C;
-    font-size: 20px;
+    font-size: 1.2em;
     vertical-align:middle;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 ul li i{
     background-color: #fff;
     color: #29C9D4;
-    font-size: 24px;
+    font-size: 1.5em;
     vertical-align:middle;
 }
