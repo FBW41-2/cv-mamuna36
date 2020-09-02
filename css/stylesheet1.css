@@ -1,8 +1,9 @@
 body{
-    border: gray solid 1px;
+    /* border: gray solid 1px; */
     font-family: Raleway, sans-serif;
     font-size: 1rem;
     margin: auto;
+    max-width: 80vw;
 }
 
 .profile-photo {
@@ -21,7 +22,7 @@ body{
      text-align: center;
      margin-bottom: 0;
      font-family: 'IM Fell English SC', serif;
-     font-size: 3rem;
+     font-size: 2rem;
  } 
 #subtitle {
     color: gray;
@@ -130,23 +131,24 @@ a[download] {
     text-decoration: none;
     margin: 0 0.625rem;
     color: #6C6C6C;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 #contact li {
     list-style-type: none;
-    margin: 0.625rem auto;
+    margin: auto;
 }
 #contact i{
     background-color: #fff;
     color: black;
-    margin: 0 1rem;
+    margin: 2px 7px;
     box-sizing: border-box;
 }
 @media screen and (min-width: 500px) {
     #menu a:hover{
         background-color: black;
         font-size: 1.5em;
+        text-decoration: underline;
     }
         #menu a:active {
         color: crimson;
@@ -154,6 +156,12 @@ a[download] {
        #menu a::after {
            display: none;
        }
+       #cv .download a:hover {
+        text-decoration: underline;
+    }
+    #portfolio a:hover .link-text{
+        text-decoration: underline;
+    }
        #contact a:hover{
         color: #29C9D4;
     } 
@@ -167,6 +175,9 @@ a[download] {
         height: 100vh;
         
     }
+    h1 {
+        font-size: 3rem;
+    }
     #menu a {display: inline-block;
              padding: 0 5%;
              text-align: center;
@@ -177,6 +188,9 @@ a[download] {
         display: inline-flex;
         text-align: justify;
         width: 100%;
+   }
+   #contact a {
+       font-size: 1.2rem;
    }
 }
 @media print {
