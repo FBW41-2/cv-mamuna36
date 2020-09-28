@@ -16,6 +16,11 @@ body header .profile-photo {
 body header .profile-photo img {
   width: 100%;
 }
+@media screen and (min-width: 633px) {
+  body header {
+    height: 100vh;
+  }
+}
 body h1 {
   text-decoration: none;
   text-align: center;
@@ -23,17 +28,16 @@ body h1 {
   font-family: "IM Fell English SC", serif;
   font-size: 2rem;
 }
+@media screen and (min-width: 633px) {
+  body h1 {
+    font-size: 3rem;
+  }
+}
 body #subtitle {
   color: gray;
   margin: 0 auto 1rem;
   font-family: "Tangerine", cursive;
   font-size: 2rem;
-}
-@font-face {
-  body {
-    font-family: magic;
-    src: url("../fonts/Magic Hat.ttf");
-  }
 }
 body h2 {
   /* font-family: magic, Arial, sans-serif; */
@@ -47,6 +51,13 @@ body #menu {
   padding: 0;
   margin: 0;
 }
+@media screen and (min-width: 633px) {
+  body #menu {
+    display: inline-flex;
+    text-align: justify;
+    width: 100%;
+  }
+}
 body #menu a {
   display: block;
   color: #fff;
@@ -57,13 +68,35 @@ body #menu a {
   background-color: #b9b9b9;
   margin: 0.0625rem auto 0;
 }
+@media screen and (min-width: 633px) {
+  body #menu a {
+    display: inline-block;
+    padding: 0 5%;
+    text-align: center;
+    font-size: 1.5em;
+    text-transform: uppercase;
+  }
+}
 body #menu a:after {
   content: ">";
   position: absolute;
   right: 0.4em;
 }
-body #menu h1,
-body #menu h2 {
+@media screen and (min-width: 500px) {
+  body #menu a:hover {
+    background-color: black;
+    font-size: 1.5em;
+    text-decoration: underline;
+  }
+  body #menu a:active {
+    color: crimson;
+  }
+  body #menu a::after {
+    display: none;
+  }
+}
+body h1,
+body h2 {
   margin: 1rem auto 0.5rem;
 }
 body h2 {
@@ -85,23 +118,33 @@ body #cv .download {
 body #cv .download a[download] {
   color: indigo;
 }
+@media screen and (min-width: 500px) {
+  body #cv .download a:hover {
+    text-decoration: underline;
+  }
+}
 body #cv .download a {
   text-decoration: none;
 }
 body #cv #portfolio a {
   text-decoration: none;
 }
-body #portfolio a .project1 {
+@media screen and (min-width: 500px) {
+  body #portfolio a:hover .link-text {
+    text-decoration: underline;
+  }
+}
+body .project1 {
   display: block;
   width: 12.5rem;
   margin: 1rem auto;
   border: black solid 0.05rem;
   overflow: hidden;
 }
-body #portfolio a .project1 img {
+body .project1 img {
   width: 100%;
 }
-body #portfolio a .project1 .link-text {
+body .project1 .link-text {
   color: #b9b9b9;
   display: block;
   margin: 0.4rem auto;
@@ -109,7 +152,7 @@ body #portfolio a .project1 .link-text {
   text-align: center;
   text-decoration: none;
 }
-body #portfolio a em {
+body em {
   color: #b9b9b9;
 }
 body .skills {
@@ -132,34 +175,7 @@ body #contact a {
   font-size: 1rem;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-body #contact li {
-  list-style-type: none;
-  margin: auto;
-}
-body #contact i {
-  background-color: #fff;
-  color: black;
-  margin: 2px 7px;
-  box-sizing: border-box;
-}
 @media screen and (min-width: 500px) {
-  body #menu a:hover {
-    background-color: black;
-    font-size: 1.5em;
-    text-decoration: underline;
-  }
-  body #menu a:active {
-    color: crimson;
-  }
-  body #menu a::after {
-    display: none;
-  }
-  body #cv .download a:hover {
-    text-decoration: underline;
-  }
-  body #portfolio a:hover .link-text {
-    text-decoration: underline;
-  }
   body #contact a:hover {
     color: #29c9d4;
   }
@@ -168,32 +184,25 @@ body #contact i {
   }
 }
 @media screen and (min-width: 633px) {
-  body header {
-    height: 100vh;
-  }
-  body h1 {
-    font-size: 3rem;
-  }
-  body #menu {
-    display: inline-flex;
-    text-align: justify;
-    width: 100%;
-  }
-  body #menu a {
-    display: inline-block;
-    padding: 0 5%;
-    text-align: center;
-    font-size: 1.5em;
-    text-transform: uppercase;
-  }
   body #contact a {
     font-size: 1.2rem;
   }
 }
+body li {
+  list-style-type: none;
+  margin: auto;
+}
+body i {
+  background-color: #fff;
+  color: black;
+  margin: 2px 7px;
+  box-sizing: border-box;
+}
+
 @media print {
-  body header,
-body nav,
-body footer {
+  header,
+nav,
+footer {
     display: none;
   }
 }
