@@ -6,7 +6,7 @@ $dark: black;
 $progress: #29c9d4;
 $sweet: crimson;
 $secondbreak: 633px;
-$firstbreak: 500px;
+$firstbreak: 578px;
 body {
   /* border: gray solid 1px; */
   font-family: Raleway, sans-serif;
@@ -93,6 +93,8 @@ body {
         &:active {
           color: $sweet;
         }
+      }
+      @media screen and (min-width: $secondbreak) {
         &::after {
           display: none;
         }
